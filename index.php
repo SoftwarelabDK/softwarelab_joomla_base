@@ -35,14 +35,8 @@ else
 }
 
 // Add JavaScript Frameworks
-JHtml::_('bootstrap.framework');
-$doc->addScript('templates/' .$this->template. '/js/softwarebase.js');
 
-// Add Stylesheets
-$doc->addStyleSheet('templates/'.$this->template.'/css/softwarebase.css');
-
-// Load optional RTL Bootstrap CSS
-JHtml::_('bootstrap.loadCss', false, $this->direction);
+//$doc->addScript('templates/' .$this->template. '/js/softwarebase.js');
 
 // Add current user information
 $user = JFactory::getUser();
@@ -52,12 +46,16 @@ $user = JFactory::getUser();
 <!DOCTYPE html>
 <html xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 <head>
-<jdoc:include type="head" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/mynewtemplate/css/template.css" type="text/css" />
+
+
 </head>
 <body>
 <jdoc:include type="modules" name="position-2" /> 
 <jdoc:include type="component" />
 <jdoc:include type="modules" name="bottom" />
+
+<link rel="stylesheet/less" type="text/css" href="templates/softwarelab_joomla_base/less/softwarelab.less" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js" type="text/javascript"></script>
 </body>
 </html>
