@@ -1,0 +1,96 @@
+/*########################################
+## Softwarelab ApS                      ##
+## 5000 Odense C                        ##
+## Danmark                              ##
+## software@softwarelab.dk              ##
+## http://www.softwarelab.dk            ##
+## Designer: Softwarelab                ##
+## Dato: November 2014                  ##
+## Version: 1.0                         ##
+########################################*/
+
+/* --------------------------------------*/
+/*		LESS CODE GOES HERE:      	     */
+/* --------------------------------------*/
+
+/*		Feel free to delete this:        */
+
+	@base_color: #2fb07e;
+
+	@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+	h1, h2, h3, h4 {
+		font-family: "lato";
+		font-weight: 300;
+		text-align: center;}
+
+	.swl {margin-bottom: 300px;}
+
+	html {
+	       overflow-y: scroll;}
+
+	.logo {
+		padding: 20px 0px 20px 0px;}
+
+	a, a:hover, a:active, a:visited {
+		color: @base_color;}
+
+	.nav>li>.nav-child {
+	list-style: none;}
+	
+// Responsive: Large desktop and up
+@media (min-width: 1200px) {
+
+}
+
+// Responsive: Not mobile view
+@media (min-width: 767px) {	
+
+	.nav>li {
+		display: inline-block;
+		margin-top: 5px;}
+
+	.nav>li>.nav-child {
+		position: absolute;
+		min-width: 150px;
+		padding: 0px 15px 15px 15px;
+		background-color: #f8f8f8;
+		z-index: 1000;
+		border: 1px solid #e7e7e7;
+		border-top: none;
+		border-radius: 5px;
+		list-style: none;}
+
+	.nav>li>.nav-child>li {
+		margin-top: 15px;
+	}
+}
+
+// Responsive: Landscape phone to desktop/tablet
+@media (max-width: 767px) {	
+}
+
+// UP TO LANDSCAPE PHONE
+@media (max-width: 320px) {
+
+}
+
+// UP TO LANDSCAPE PHONE
+@media (max-width: 360px) {
+
+}
+
+// UP TO LANDSCAPE PHONE
+@media (max-width: 480px) {
+
+}
+
+// Responsive: Tablet to desktop
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+
+
+
+
